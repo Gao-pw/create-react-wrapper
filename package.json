@@ -1,0 +1,48 @@
+{
+  "name": "@siroi/create-react-wrapper",
+  "version": "2.0.0",
+  "type": "module",
+  "author": {
+    "name": "siroi"
+  },
+  "description": "create a react wrapper",
+  "keywords": ["react", "react wrapper"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "git:commit": "easyfront commit"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "dependencies": {
+    "@siroi/fe-utils": "1.0.11"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.6.7",
+    "@types/node": "^22.8.1",
+    "typescript": "^5.8.3",
+    "@maxwell-zhai/easyfront": "^1.1.4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/lodash-es": "^4.17.12"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
