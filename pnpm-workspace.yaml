@@ -1,0 +1,3 @@
+packages:
+  # 会将packages下面归纳给到pnpm工作空间进行管理
+  - 'docres'

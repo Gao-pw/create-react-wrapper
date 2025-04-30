@@ -1,10 +1,9 @@
-import { isAsyncFunction } from 'util/types';
 import {
     withPromiseType,
     T_CreateWrapper,
     GetOnResolveResultType,
 } from './types';
-import { getOrCreateWrapperElement, CreateNewRootInstance } from './utils';
+import { getOrCreateWrapperElement, CreateNewRootInstance, isAsyncFunction } from './utils';
 import { createElement } from 'react';
 
 /**
